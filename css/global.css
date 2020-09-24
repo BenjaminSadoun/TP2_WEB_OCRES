@@ -20,7 +20,25 @@ a {
 
 .wrapper {
     padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
+.wrapper .wrap-gauche{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.wrapper .wrap-gauche div{
+    margin-left : 20px;
+    margin-right: 20px;
+}
+
 
 body > header {
     margin-bottom: 20px;
@@ -106,6 +124,9 @@ h1 {
     padding: 15px 0px 10px 0px;
     border-bottom: 1px solid #e1e6e9;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .stats-links span, .stats-links a {
@@ -121,6 +142,11 @@ h1 {
     font-weight: normal;
     color: #4b5c66;
 }
+
+.stats-links .links{
+    margin-top: 10px;
+}
+
 
 h2 {
     font-size: 20px;
