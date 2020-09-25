@@ -17,7 +17,7 @@
 				<div class="logo-search">
 					<img class="pull-left" src="img/logo.png" />
 				</div>
-				<div>
+				<div class="recherche">
 					<form method="POST" action="index.html">
 						<input type="search" required class="search">
 						<input type="submit" name="submit" value="Rechercher" class="submit">
@@ -25,8 +25,21 @@
 				</div>
 			</div>
 			<div class="user">
-				<a href="#">Luke Chesser</a>
+				<div class="btn-group">
+					<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<a href="#"> Luke Chesser </a>
+					</button>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Edit my Profile</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Logout</a>
+					</div>
+
+				</div>
 			</div>
+			<!--  -->
+		</div>
 		</div>
 	</header>
 	<div class="container">
@@ -85,9 +98,11 @@
 						</div>
 
 					</header>
-					<h2>Top Album</h2>
-					<div>
-						<a class="station" href="#">Start Station</a>
+					<div class="en-tete">
+						<h2>Top Album</h2>
+						<div>
+							<a class="station" href="#">Start Station</a>
+						</div>
 					</div>
 					<section id="albums">
 						<div class="row">
